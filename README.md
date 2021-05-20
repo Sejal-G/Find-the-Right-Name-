@@ -68,3 +68,40 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+-Fonts
+- <link rel="preconnect" href="https://fonts.gstatic.com">
+
+- <link href="https://fonts.googleapis.com/css2?fam..." rel="stylesheet">
+
+- <link href="https://fonts.googleapis.com/css2?fam..." rel="stylesheet">
+
+
+## Understanding of the working and important concepts
+
+[Why is create-react-app used?]
+As the browser does not understand JSX, so to save developers from the monotony of babble or numerous other transpilers, we use creat-react-app.
+Not only it integrates a transpiler but also a bundler.
+
+[Class-component]
+Class component provides lifecycle, states, props attribute.
+
+
+[What are states?]
+States are piece of data that we might need to save because it might change in the future.
+
+!IMPORTANT!
+Changing a state manually does not re-render it to change at the place of origin.
+To trigger a re-render use state_name.setstate i.e. setState function!!!!!
+
+Maintaing state
+>declare object(key value pair).
+state={
+    key: value
+}
+[What are props?]
+States are not props. States are js objects where we save data we might change in the future.
+
+Prop is a data that we can transfer/teleport/communicate from parent to child component. So if there is a state in parent, which is to be consumed by child component, we use prop to transfer the state from parent to child.
+if class component this.props.name
+if functional pass props as an args and then {props.name}
