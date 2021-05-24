@@ -99,9 +99,17 @@ Maintaing state
 state={
     key: value
 }
+//
 [What are props?]
 States are not props. States are js objects where we save data we might change in the future.
 
 Prop is a data that we can transfer/teleport/communicate from parent to child component. So if there is a state in parent, which is to be consumed by child component, we use prop to transfer the state from parent to child.
 if class component this.props.name
 if functional pass props as an args and then {props.name}
+
+[What to do if child to parent communicaiton?]
+Reverse props X
+Callback Method has to be passed as a prop
+
+[TEMPLATE LITERALS]
+Aloow us to inject our variables inside a string using backquote ``!!
